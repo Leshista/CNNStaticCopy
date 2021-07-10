@@ -6,10 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNN Static</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__left-block">
+                <div class="header__logo">
+                    <img src="" alt="CNN Logo">
+                </div>
+                <nav class="menu header__menu">
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                    <a href="/" class="menu__item"></a>
+                </nav>
+            </div>
+            <div class="header__right-block">
+                <div class="language-selection">
+                    <p class="language-selection__button">International Version</p>
+                    <div class="language-selection__marker"></div>
+                </div>
+                <div class="search">
+                    <!-- Making checkbox invisible -->
+                    <input type="checkbox" class="search__switcher" id="search__switcher" hidden>
+                    <!-- But remaining its functionality through label -->
+                    <label for="search__switcher"></label>
+                    <!-- Which will enable disabled by default searchbar -->
+                    <input type="search" class="search__searchbar">
+                </div>
+                <div class="burger">
+                    <!-- The same thing again for the burger menu -->
+                    <input type="checkbox" class="burger__switcher" id="burger__switcher" hidden>
+                    <label for="burger__switcher"></label>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
