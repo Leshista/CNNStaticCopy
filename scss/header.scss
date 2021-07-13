@@ -72,9 +72,16 @@
 
     &__label {
         @include active;
+        /* Disabling blue background during selection */
+        &::selection {
+            background-color: inherit;
+        }
     }
 
     &__marker {
+        &::selection {
+            background-color: inherit;
+        }
     }
     &__block {
         width: 25rem;

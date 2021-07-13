@@ -238,9 +238,29 @@ body {
   /* Making it different color is quite difficult, it requires changing its color to transparent, nullifying initial border and set another*/
 }
 
+.language-selection__label {
+  /* Disabling blue background during selection */
+}
+
 .language-selection__label:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.language-selection__label::-moz-selection {
+  background-color: inherit;
+}
+
+.language-selection__label::selection {
+  background-color: inherit;
+}
+
+.language-selection__marker::-moz-selection {
+  background-color: inherit;
+}
+
+.language-selection__marker::selection {
+  background-color: inherit;
 }
 
 .language-selection__block {
