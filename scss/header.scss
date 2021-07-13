@@ -94,6 +94,8 @@
         margin-bottom: 1.5rem;
         color: $grey;
         text-decoration: none;
+        line-height: 2.4rem;
+        @include active;
         &:first-of-type {
             padding-top: 0.8rem;
         }
@@ -101,13 +103,16 @@
     &__line {
         color: transparent;
         border: none;
-        border-top: 1px solid #bfbfbf;
+        border-top: 1px solid $grey;
         width: 90%;
         margin-bottom: 1.5rem;
     }
     &__set-preference {
         padding-right: 1.1rem;
         margin-bottom: 2rem;
+        &:hover {
+            cursor: default;
+        }
     }
     &__preference-block {
         display: inherit;
@@ -120,12 +125,14 @@
     }
     &__confirm {
         margin: 1.5rem 1.2rem 3rem 0;
-        padding: 1 2rem;
+        padding: 0 1.5rem;
         line-height: 2.8rem;
+        font-size: 1.5rem;
         background-color: transparent;
         color: $grey;
         border: 1px solid $grey;
         outline: none;
+        @include active;
     }
 }
 .search {

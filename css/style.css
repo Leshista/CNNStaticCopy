@@ -141,6 +141,10 @@ body {
   font-weight: 300;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* ===== HEADER ===== */
 .wrapper {
   width: 110rem;
@@ -257,6 +261,12 @@ body {
   margin-bottom: 1.5rem;
   color: #bfbfbf;
   text-decoration: none;
+  line-height: 2.4rem;
+}
+
+.language-selection__language:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .language-selection__language:first-of-type {
@@ -276,6 +286,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.language-selection__set-preference:hover {
+  cursor: default;
+}
+
 .language-selection__preference-block {
   display: inherit;
   width: 100%;
@@ -285,12 +299,18 @@ body {
 
 .language-selection__confirm {
   margin: 1.5rem 1.2rem 3rem 0;
-  padding: 1 2rem;
+  padding: 0 1.5rem;
   line-height: 2.8rem;
+  font-size: 1.5rem;
   background-color: transparent;
   color: #bfbfbf;
   border: 1px solid #bfbfbf;
   outline: none;
+}
+
+.language-selection__confirm:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .search {
