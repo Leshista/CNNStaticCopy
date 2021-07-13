@@ -1,3 +1,4 @@
+/*Dividing everything into separate files for comfort*/
 /* ===== RESET CSS ===== */
 html,
 body,
@@ -131,6 +132,9 @@ table {
 }
 
 /* ===== BASIC CSS ===== */
+/* The most often text color in this page */
+/* The most often hover effect */
+/* I use rem for all measurements in this page, so I defined it as 10 px for comfort */
 html {
   font-size: 62.5%;
 }
@@ -141,6 +145,7 @@ body {
   font-weight: 300;
 }
 
+/* Class which I add to menus to hide them till interaction */
 .hidden {
   display: none !important;
 }
@@ -155,6 +160,7 @@ body {
   height: 5rem;
   width: 100%;
   background-color: #0c0c0c;
+  /* Making logo to 'stand out' from header */
 }
 
 .header__wrapper {
@@ -211,6 +217,7 @@ body {
 
 .menu__item:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .menu__item:last-of-type {
@@ -228,6 +235,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Making it different color is quite difficult, it requires changing its color to transparent, nullifying initial border and set another*/
 }
 
 .language-selection__label:hover {
@@ -319,6 +327,7 @@ body {
 
 .search__label {
   font-size: 2rem;
+  /* Mirroring it*/
 }
 
 .search__label:hover {

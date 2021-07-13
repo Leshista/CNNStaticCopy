@@ -1,11 +1,14 @@
 /* ===== BASIC CSS ===== */
+/* The most often text color in this page */
 $grey: rgb(191, 191, 191);
+/* The most often hover effect */
 @mixin active {
     &:hover {
         color: #fff;
         cursor: pointer;
     }
 }
+/* I use rem for all measurements in this page, so I defined it as 10 px for comfort */
 html {
     font-size: 62.5%;
 }
@@ -14,6 +17,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
+/* Class which I add to menus to hide them till interaction */
 .hidden {
     display: none !important;
 }

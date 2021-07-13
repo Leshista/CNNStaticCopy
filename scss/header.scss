@@ -20,6 +20,7 @@
         display: inherit;
     }
 
+    /* Making logo to 'stand out' from header */
     &__logo {
         width: 6rem;
         position: relative;
@@ -51,9 +52,7 @@
         padding-right: 0.5rem;
         border-right: 1px solid #595959;
 
-        &:hover {
-            color: #fff;
-        }
+        @include active;
 
         &:last-of-type {
             margin: 0;
@@ -100,6 +99,7 @@
             padding-top: 0.8rem;
         }
     }
+    /* Making it different color is quite difficult, it requires changing its color to transparent, nullifying initial border and set another*/
     &__line {
         color: transparent;
         border: none;
@@ -144,6 +144,7 @@
     &__label {
         @include active;
         font-size: 2rem;
+        /* Mirroring it*/
         .fa-search {
             transform: rotateY(180deg);
         }
