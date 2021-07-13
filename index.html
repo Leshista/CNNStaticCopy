@@ -36,22 +36,39 @@
             <!-- === Header right block (language selection and burger menu) === -->
             <div class="header__right-block">
                 <div class="language-selection">
+                    <!-- Making checkbox invisible -->
                     <input type="checkbox" class="language-selection__switcher" id="language-selection__switcher"
                         hidden>
+                    <!-- But remaining its functionality through label -->
                     <label for="language-selection__switcher" class="language-selection__label">International
                         Edition</label>
                     <div class="language-selection__marker"></div>
+                    <div class="language-selection__block">
+                        <a href="/" class="language-selection__language">U.S.</a><a href="/"
+                            class="language-selection__language">Arabic</a><a href="/"
+                            class="language-selection__language">Español</a>
+                        <hr>
+                        <p>Set edition preference</p>
+                        <div class="language-selection__preference-block">
+                            <input type="radio" value="U.S" name="preference" id="U.S"
+                                class="language-selection__preference-radiobutton">
+                            <label for="U.S" class="language-selection__preference-label">U.S.</label>
+                            <input type="radio" value="International" name="preference" id="International"
+                                class="language-selection__preference-radiobutton">
+                            <label for=" International"
+                                class="language-selection__preference-label">International</label>
+                        </div>
+                        <input type="submit" value="Confirm" class="language-selection__confirm">
+                    </div>
                 </div>
                 <div class="search">
-                    <!-- Making checkbox invisible -->
+                    <!-- The same thing again for the search -->
                     <input type="checkbox" class="search__switcher" id="search__switcher" hidden>
-                    <!-- But remaining its functionality through label -->
                     <label for="search__switcher" class="search__label"><i class="fas fa-search"></i></label>
-                    <!-- Which will enable disabled by default searchbar -->
                     <input type="search" class="search__searchbar">
                 </div>
                 <div class="burger">
-                    <!-- The same thing again for the burger menu -->
+                    <!-- And for the burger menu -->
                     <input type="checkbox" class="burger__switcher" id="burger__switcher" hidden>
                     <label for="burger__switcher" class="burger__label"><i class="fas fa-bars"></i></label>
                 </div>
