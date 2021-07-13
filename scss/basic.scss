@@ -1,7 +1,16 @@
 /* ===== BASIC CSS ===== */
+$grey: rgb(191, 191, 191);
+@mixin active {
+    &:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body {
     font-size: 1.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }

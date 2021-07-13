@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNN Static</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- ===== HEADER ===== -->
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header__wrapper">
             <!-- === Header left block (logo and menu) === -->
             <div class="header__left-block">
                 <div class="header__logo">
-                    <img src="img/logo.png" alt="CNN Logo">
+                    <a href="/"><img src="img/logo.png" alt="CNN Logo"></a>
                 </div>
                 <nav class="menu header__menu">
                     <a href="/" class="menu__item">Regions</a>
@@ -35,21 +36,24 @@
             <!-- === Header right block (language selection and burger menu) === -->
             <div class="header__right-block">
                 <div class="language-selection">
-                    <p class="language-selection__button">International Version</p>
+                    <input type="checkbox" class="language-selection__switcher" id="language-selection__switcher"
+                        hidden>
+                    <label for="language-selection__switcher" class="language-selection__label">International
+                        Edition</label>
                     <div class="language-selection__marker"></div>
                 </div>
                 <div class="search">
                     <!-- Making checkbox invisible -->
                     <input type="checkbox" class="search__switcher" id="search__switcher" hidden>
                     <!-- But remaining its functionality through label -->
-                    <label for="search__switcher"></label>
+                    <label for="search__switcher" class="search__label"><i class="fas fa-search"></i></label>
                     <!-- Which will enable disabled by default searchbar -->
                     <input type="search" class="search__searchbar">
                 </div>
                 <div class="burger">
                     <!-- The same thing again for the burger menu -->
                     <input type="checkbox" class="burger__switcher" id="burger__switcher" hidden>
-                    <label for="burger__switcher"></label>
+                    <label for="burger__switcher" class="burger__label"><i class="fas fa-bars"></i></label>
                 </div>
             </div>
         </div>
