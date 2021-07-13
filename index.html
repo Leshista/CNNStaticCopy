@@ -42,23 +42,27 @@
                     <!-- But remaining its functionality through label -->
                     <label for="language-selection__switcher" class="language-selection__label">International
                         Edition</label>
-                    <div class="language-selection__marker"></div>
+                    <div class="language-selection__marker">+</div>
                     <div class="language-selection__block">
                         <a href="/" class="language-selection__language">U.S.</a><a href="/"
                             class="language-selection__language">Arabic</a><a href="/"
                             class="language-selection__language">Español</a>
-                        <hr>
-                        <p>Set edition preference</p>
+                        <hr class="language-selection__line">
+                        <p class="language-selection__set-preference">Set edition preference:</p>
                         <div class="language-selection__preference-block">
-                            <input type="radio" value="U.S" name="preference" id="U.S"
-                                class="language-selection__preference-radiobutton">
-                            <label for="U.S" class="language-selection__preference-label">U.S.</label>
-                            <input type="radio" value="International" name="preference" id="International"
-                                class="language-selection__preference-radiobutton">
-                            <label for=" International"
-                                class="language-selection__preference-label">International</label>
+                            <div class="language-selection__preference-us">
+                                <input type="radio" value="U.S" name="preference" id="U.S"
+                                    class="language-selection__preference-radiobutton">
+                                <label for="U.S" class="language-selection__preference-label">U.S.</label>
+                            </div>
+                            <div class="language-selection__preference-international">
+                                <input type="radio" value="International" name="preference" id="International"
+                                    class="language-selection__preference-radiobutton">
+                                <label for=" International"
+                                    class="language-selection__preference-label">International</label>
+                            </div>
                         </div>
-                        <input type="submit" value="Confirm" class="language-selection__confirm">
+                        <button type="submit" class="language-selection__confirm">Confirm</button>
                     </div>
                 </div>
                 <div class="search">
