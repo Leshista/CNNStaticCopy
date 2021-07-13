@@ -224,6 +224,10 @@ body {
   margin: 0 1.5rem 0 1.5rem;
 }
 
+.search__label {
+  font-size: 2rem;
+}
+
 .search__label:hover {
   color: #fff;
   cursor: pointer;
@@ -236,6 +240,10 @@ body {
 
 .search__searchbar {
   display: none;
+}
+
+.burger__label {
+  font-size: 2rem;
 }
 
 .burger__label:hover {

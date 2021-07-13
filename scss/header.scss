@@ -82,6 +82,7 @@
 
     &__label {
         @include active;
+        font-size: 2rem;
         .fa-search {
             transform: rotateY(180deg);
         }
@@ -98,5 +99,6 @@
 
     &__label {
         @include active;
+        font-size: 2rem;
     }
 }
