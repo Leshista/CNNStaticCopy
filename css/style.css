@@ -388,10 +388,21 @@ body {
   border: none;
   outline: none;
   display: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 
 .search__submit:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.search__submit:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .search__switcher:checked ~ .search__form > .search__searchbar {
