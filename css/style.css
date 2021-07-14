@@ -163,6 +163,10 @@ body {
   pointer-events: none;
 }
 
+.burger__block_open-header {
+  background-color: transparent !important;
+}
+
 /* ===== HEADER ===== */
 .wrapper {
   width: 110rem;
