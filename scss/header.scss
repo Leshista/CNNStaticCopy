@@ -159,8 +159,13 @@
 
     &__searchbar {
         position: absolute;
-        left: 46rem;
-        top: 1.5rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 0.8rem;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        left: 46.3rem;
+        top: 1rem;
         width: 51.5%;
         display: none;
     }
