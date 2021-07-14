@@ -450,3 +450,13 @@ body {
   height: 50rem;
   background-color: rgba(0, 0, 0, 0.9);
 }
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 110em) {
+  .wrapper {
+    width: 100%;
+  }
+  .header__menu {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 110em) {
+    .wrapper {
+        width: 100%;
+    }
+    .header__menu {
+        display: none;
+    }
+}
