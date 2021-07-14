@@ -134,6 +134,14 @@ table {
 /* ===== BASIC CSS ===== */
 /* The most often text color in this page */
 /* The most often hover effect */
+/* Disabling blue background during selection */
+*::-moz-selection {
+  background: transparent;
+}
+*::selection {
+  background: transparent;
+}
+
 /* I use rem for all measurements in this page, so I defined it as 10 px for comfort */
 html {
   font-size: 62.5%;
@@ -165,6 +173,7 @@ body {
 
 .header__wrapper {
   height: 100%;
+  position: relative;
   color: #bfbfbf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,29 +247,9 @@ body {
   /* Making it different color is quite difficult, it requires changing its color to transparent, nullifying initial border and set another*/
 }
 
-.language-selection__label {
-  /* Disabling blue background during selection */
-}
-
 .language-selection__label:hover {
   color: #fff;
   cursor: pointer;
-}
-
-.language-selection__label::-moz-selection {
-  background-color: inherit;
-}
-
-.language-selection__label::selection {
-  background-color: inherit;
-}
-
-.language-selection__marker::-moz-selection {
-  background-color: inherit;
-}
-
-.language-selection__marker::selection {
-  background-color: inherit;
 }
 
 .language-selection__block {
@@ -372,9 +361,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.6rem;
-  left: 46.3rem;
+  left: 7rem;
   top: 1rem;
-  width: 51.5%;
+  width: 88%;
   display: none;
 }
 
@@ -383,7 +372,7 @@ body {
   z-index: 2;
   background-color: transparent;
   font-size: 1.5rem;
-  right: 46.3rem;
+  right: 7.5rem;
   top: 1.5rem;
   border: none;
   outline: none;

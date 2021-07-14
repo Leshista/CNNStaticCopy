@@ -8,6 +8,10 @@ $grey: rgb(191, 191, 191);
         cursor: pointer;
     }
 }
+/* Disabling blue background during selection */
+*::selection {
+    background: transparent;
+}
 /* I use rem for all measurements in this page, so I defined it as 10 px for comfort */
 html {
     font-size: 62.5%;

@@ -11,6 +11,7 @@
 
     &__wrapper {
         height: 100%;
+        position: relative;
         color: $grey;
         display: flex;
         justify-content: space-between;
@@ -72,16 +73,9 @@
 
     &__label {
         @include active;
-        /* Disabling blue background during selection */
-        &::selection {
-            background-color: inherit;
-        }
     }
 
     &__marker {
-        &::selection {
-            background-color: inherit;
-        }
     }
     &__block {
         width: 25rem;
@@ -166,9 +160,9 @@
         padding: 0 0.8rem;
         box-sizing: border-box;
         font-size: 1.6rem;
-        left: 46.3rem;
+        left: 7rem;
         top: 1rem;
-        width: 51.5%;
+        width: 88%;
         display: none;
     }
     &__submit {
@@ -176,7 +170,7 @@
         z-index: 2;
         background-color: transparent;
         font-size: 1.5rem;
-        right: 46.3rem;
+        right: 7.5rem;
         top: 1.5rem;
         border: none;
         outline: none;
