@@ -87,6 +87,7 @@
         width: 25rem;
         box-sizing: border-box;
         position: absolute;
+        z-index: 1;
         padding: 0 1.5rem;
         top: 5rem;
         left: -7rem;
@@ -159,6 +160,7 @@
 
     &__searchbar {
         position: absolute;
+        z-index: 1;
         height: 3rem;
         line-height: 3rem;
         padding: 0 0.8rem;
@@ -169,8 +171,26 @@
         width: 51.5%;
         display: none;
     }
+    &__submit {
+        position: absolute;
+        z-index: 2;
+        background-color: transparent;
+        font-size: 1.5rem;
+        right: 46.3rem;
+        top: 1.5rem;
+        border: none;
+        outline: none;
+        display: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
     /* Making clicking on switcher reveal block, the second way */
-    &__switcher:checked ~ &__searchbar {
+    &__switcher:checked ~ &__form > &__searchbar {
+        display: block;
+    }
+    /* And the submit button, z-index increased because it needs to be displayed on top of the searchbar */
+    &__switcher:checked ~ &__form > &__submit {
         display: block;
     }
 }
