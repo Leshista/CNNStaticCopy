@@ -158,6 +158,11 @@ body {
   display: none !important;
 }
 
+.burger__block_open {
+  color: #595959 !important;
+  pointer-events: none;
+}
+
 /* ===== HEADER ===== */
 .wrapper {
   width: 110rem;
@@ -188,6 +193,8 @@ body {
 }
 
 .header__logo {
+  position: relative;
+  z-index: 4;
   width: 6rem;
   position: relative;
 }
@@ -217,11 +224,17 @@ body {
 }
 
 .menu__item {
+  position: relative;
+  z-index: 4;
   text-decoration: none;
   color: inherit;
   margin-right: 0.5rem;
   padding-right: 0.5rem;
   border-right: 1px solid #595959;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .menu__item:hover {
@@ -245,6 +258,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* Making it different color is quite difficult, it requires changing its color to transparent, nullifying initial border and set another*/
+}
+
+.language-selection__label {
+  position: relative;
+  z-index: 4;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .language-selection__label:hover {
@@ -338,6 +360,8 @@ body {
 }
 
 .search__label {
+  position: relative;
+  z-index: 4;
   font-size: 2rem;
   /* Mirroring it*/
 }
@@ -354,7 +378,7 @@ body {
 
 .search__searchbar {
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   height: 3rem;
   line-height: 3rem;
   padding: 0 0.8rem;
@@ -369,7 +393,7 @@ body {
 
 .search__submit {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   background-color: transparent;
   font-size: 1.5rem;
   right: 7.5rem;
@@ -403,10 +427,22 @@ body {
 }
 
 .burger__label {
+  position: relative;
+  z-index: 4;
   font-size: 2rem;
 }
 
 .burger__label:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.burger__block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 50rem;
+  background-color: rgba(0, 0, 0, 0.9);
 }

@@ -1,6 +1,6 @@
 /* ===== BASIC CSS ===== */
 /* The most often text color in this page */
-$grey: rgb(191, 191, 191);
+$grey: #bfbfbf;
 /* The most often hover effect */
 @mixin active {
     &:hover {
@@ -24,4 +24,8 @@ body {
 /* Class which I add to menus to hide them till interaction */
 .hidden {
     display: none !important;
+}
+.burger__block_open {
+    color: #595959 !important;
+    pointer-events: none;
 }

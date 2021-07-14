@@ -23,6 +23,8 @@
 
     /* Making logo to 'stand out' from header */
     &__logo {
+        position: relative;
+        z-index: 4;
         width: 6rem;
         position: relative;
         img {
@@ -47,11 +49,15 @@
     color: inherit;
 
     &__item {
+        position: relative;
+        z-index: 4;
         text-decoration: none;
         color: inherit;
         margin-right: 0.5rem;
         padding-right: 0.5rem;
         border-right: 1px solid #595959;
+        transition-property: color;
+        transition-duration: 200ms;
 
         @include active;
 
@@ -72,6 +78,10 @@
     }
 
     &__label {
+        position: relative;
+        z-index: 4;
+        transition-property: color;
+        transition-duration: 200ms;
         @include active;
     }
 
@@ -144,6 +154,8 @@
     }
 
     &__label {
+        position: relative;
+        z-index: 4;
         @include active;
         font-size: 2rem;
         /* Mirroring it*/
@@ -154,7 +166,7 @@
 
     &__searchbar {
         position: absolute;
-        z-index: 1;
+        z-index: 4;
         height: 3rem;
         line-height: 3rem;
         padding: 0 0.8rem;
@@ -167,7 +179,7 @@
     }
     &__submit {
         position: absolute;
-        z-index: 2;
+        z-index: 4;
         background-color: transparent;
         font-size: 1.5rem;
         right: 7.5rem;
@@ -200,7 +212,18 @@
     }
 
     &__label {
+        position: relative;
+        z-index: 4;
         @include active;
         font-size: 2rem;
+    }
+    &__block {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        width: 100vw;
+        height: 50rem;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 }
