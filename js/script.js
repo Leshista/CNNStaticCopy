@@ -1,4 +1,4 @@
-// Making clicking on switcher reveal block
+// Making clicking on switcher reveal block, the first way
 let languageSelectionSwitcher = document.querySelector('.language-selection__switcher');
 let languageSelectionBlock = document.querySelector('.language-selection__block');
 languageSelectionSwitcher.addEventListener('click', function () {

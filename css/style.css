@@ -343,6 +343,7 @@ body {
 
 .search {
   margin: 0 1.5rem 0 1.5rem;
+  /* Making clicking on switcher reveal block, the second way */
 }
 
 .search__label {
@@ -361,7 +362,15 @@ body {
 }
 
 .search__searchbar {
+  position: absolute;
+  left: 46rem;
+  top: 1.5rem;
+  width: 51.5%;
   display: none;
+}
+
+.search__switcher:checked ~ .search__searchbar {
+  display: block;
 }
 
 .burger__label {

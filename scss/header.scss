@@ -158,7 +158,15 @@
     }
 
     &__searchbar {
+        position: absolute;
+        left: 46rem;
+        top: 1.5rem;
+        width: 51.5%;
         display: none;
+    }
+    /* Making clicking on switcher reveal block, the second way */
+    &__switcher:checked ~ &__searchbar {
+        display: block;
     }
 }
 
