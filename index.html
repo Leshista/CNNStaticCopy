@@ -83,8 +83,8 @@
                     <input type="checkbox" class="burger__switcher" id="burger__switcher" hidden>
                     <label for="burger__switcher" class="burger__label"><i class="fas fa-bars"></i></label>
                     <div class="burger__block hidden">
-                        <nav class="menu">
-                            <div class="wrapper menu__wrapper">
+                        <div class="wrapper">
+                            <nav class="menu">
                                 <ul class="menu__block">
                                     <li><a href="/" class="menu__title">Regions</a></li>
                                     <li><a href="/" class="menu__item">U.S.</a></li>
@@ -197,32 +197,37 @@
                                     <li><a href="/" class="menu__item">Partner sites</a></li>
                                     <li><a href="/" class="menu__item">iReport</a></li>
                                 </ul>
-                            </div>
-                        </nav>
-                        <nav class="language-selection_second">
-                            <div class="language-selection_second__item">
-                                <a href="/"><img src="img/logo.png" alt="logo-us">U.S.</a>
-                            </div>
-                            <div class="language-selection_second__item">
-                                <a href="/"><img src="img/logo-esp.png" alt="logo-esp">Español</a>
-                            </div>
-                            <div class="language-selection_second__item">
-                                <a href="/"><img src="img/logo-arab.png" alt="logo-arab">Arabic</a>
-                            </div>
-                            <p class="language-selection_second__set-preference">Set edition preference:</p>
-                            <div class="language-selection_second__preference">
-                                <input type="radio" value="U.S" name="preference" id="U.S"
-                                    class="language-selection_second__preference-radiobutton">
-                                <label for="U.S" class="language-selection_second__preference-label">U.S.</label>
-                            </div>
-                            <div class="language-selection_second__preference">
-                                <input type="radio" value="International" name="preference" id="International"
-                                    class="language-selection_second__preference-radiobutton" checked>
-                                <label for=" International"
-                                    class="language-selection_second__preference-label">International</label>
-                                <button type="submit" class="language-selection_second__confirm">Confirm</button>
-                            </div>
-                        </nav>
+                            </nav>
+                            <nav class="language-selection-second">
+                                <div class="language-selection-second__item">
+                                    <a href="/" class="language-selection-second__link"><img src="img/logo.png"
+                                            alt="logo-us" class="language-selection-second__img">U.S.</a>
+                                </div>
+                                <div class="language-selection-second__item">
+                                    <a href="/" class="language-selection-second__link"><img src="img/logo-esp.png"
+                                            alt="logo-esp" class="language-selection-second__img">Español</a>
+                                </div>
+                                <div class="language-selection-second__item">
+                                    <a href="/" class="language-selection-second__link"><img src="img/logo-arab.png"
+                                            alt="logo-arab"
+                                            class="language-selection-second__img language-selection-second__img_arab">Arabic</a>
+                                </div>
+                                <p class="language-selection-second__set-preference">Set edition preference:</p>
+                                <div class="language-selection-second__preference">
+                                    <input type="radio" value="U.S" name="preference" id="U.S"
+                                        class="language-selection-second__preference-radiobutton">
+                                    <label for="U.S" class="language-selection-second__preference-label">U.S.</label>
+                                </div>
+                                <div class="language-selection-second__preference">
+                                    <input type="radio" value="International" name="preference" id="International"
+                                        class="language-selection-second__preference-radiobutton" checked>
+                                    <label for=" International"
+                                        class="language-selection-second__preference-label">International</label>
+                                </div>
+                                <button type="submit"
+                                    class="language-selection__confirm language-selection-second__confirm">Confirm</button>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
