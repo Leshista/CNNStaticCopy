@@ -6,25 +6,25 @@
     .header__nav {
         display: none;
     }
-}
-.burger__label {
-    padding-right: 1rem;
-}
-.search {
-    display: none;
-}
-.language-selection {
-    display: none;
-}
-.menu {
-    box-sizing: border-box;
-    padding: 1.5rem 1.5rem 7rem 1.5rem;
-    flex-direction: column;
-    &__item {
-        display: none;
-        padding: 0.4rem 0;
+    .burger__label {
+        padding-right: 1rem;
     }
-}
-.language-selection-second {
-    display: none;
+    .search {
+        display: none;
+    }
+    .language-selection {
+        display: none;
+    }
+    .menu {
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem 7rem 1.5rem;
+        flex-direction: column;
+        &__item {
+            display: none;
+            padding: 0.4rem 0;
+        }
+    }
+    .language-selection-second {
+        display: none;
+    }
 }
