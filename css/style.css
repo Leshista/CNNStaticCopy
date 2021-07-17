@@ -533,12 +533,8 @@ body {
 }
 
 .language-selection-second__img {
-  width: 3rem;
+  height: 3rem;
   margin-right: 0.75rem;
-}
-
-.language-selection-second__img_arab {
-  width: 7.5rem;
 }
 
 .language-selection-second__set-preference {
