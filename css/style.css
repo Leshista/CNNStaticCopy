@@ -208,7 +208,7 @@ body {
   position: absolute;
 }
 
-.header__menu {
+.header__nav {
   display: inherit;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -223,11 +223,11 @@ body {
           align-items: center;
 }
 
-.menu {
+.nav {
   color: inherit;
 }
 
-.menu__item {
+.nav__item {
   position: relative;
   z-index: 4;
   text-decoration: none;
@@ -241,12 +241,12 @@ body {
           transition-duration: 200ms;
 }
 
-.menu__item:hover {
+.nav__item:hover {
   color: #fff;
   cursor: pointer;
 }
 
-.menu__item:last-of-type {
+.nav__item:last-of-type {
   margin: 0;
   padding: 0;
   border: 0;
@@ -456,7 +456,7 @@ body {
   .wrapper {
     width: 100%;
   }
-  .header__menu {
+  .header__nav {
     display: none;
   }
 }

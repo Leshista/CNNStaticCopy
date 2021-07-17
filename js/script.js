@@ -1,5 +1,5 @@
 let header = document.querySelector('.header')
-let menuItems = document.querySelectorAll('.menu__item');
+let navItems = document.querySelectorAll('.nav__item');
 let languageSelectionSwitcher = document.querySelector('.language-selection__switcher');
 let languageSelectionLabel = document.querySelector('.language-selection__label');
 let languageSelectionBlock = document.querySelector('.language-selection__block');
@@ -22,7 +22,7 @@ searchSubmit.addEventListener('click', function () {
 burgerSwitcher.addEventListener('click', function () {
     burgerBlock.classList.toggle('hidden');
     header.classList.toggle('burger__block_open-header');
-    menuItems.forEach(function (e, i, a) {
+    navItems.forEach(function (e, i, a) {
         e.classList.toggle('burger__block_open');
     });
     languageSelectionLabel.classList.toggle('burger__block_open');
