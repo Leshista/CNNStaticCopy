@@ -8,6 +8,10 @@ $grey: #bfbfbf;
         cursor: pointer;
     }
 }
+@mixin trans-color {
+    transition-property: color;
+    transition-duration: 200ms;
+}
 /* Disabling blue background during selection */
 *::selection {
     background: transparent;

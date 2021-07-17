@@ -306,6 +306,10 @@ body {
   color: #bfbfbf;
   text-decoration: none;
   line-height: 2.4rem;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .language-selection__language:hover {
@@ -350,6 +354,10 @@ body {
   color: #bfbfbf;
   border: 1px solid #bfbfbf;
   outline: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .language-selection__confirm:hover {
@@ -366,6 +374,10 @@ body {
 .search__label {
   position: relative;
   z-index: 4;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
   font-size: 2rem;
   /* Mirroring it*/
 }
@@ -433,6 +445,10 @@ body {
 .burger__label {
   position: relative;
   z-index: 4;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
   font-size: 2rem;
 }
 
@@ -447,8 +463,54 @@ body {
   top: 0;
   z-index: 3;
   width: 100vw;
-  height: 50rem;
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu {
+  margin-top: 5rem;
+  padding: 1.5rem 0;
+}
+
+.menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% / 6);
+  padding-right: 1.5rem;
+}
+
+.menu__title {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+}
+
+.menu__title_img {
+  padding: 1.33rem 0;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: #bfbfbf;
+  line-height: 2rem;
+  font-size: 1.35rem;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.menu__item:hover {
+  color: #fff;
 }
 
 /* ===== MEDIA QUERIES ===== */
