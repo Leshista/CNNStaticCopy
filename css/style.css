@@ -558,6 +558,52 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
+  padding: 3rem 0;
+}
+
+.footer__upper-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__search-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #262626;
+  padding: 0.3rem 1rem;
+}
+
+.footer__searchbar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bfbfbf;
+  font-size: 1.6rem;
+  width: 26rem;
+}
+
+.footer__search-submit {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #bfbfbf;
+  font-size: 2rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.weather__item {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 1.5rem;
 }
 
 .language-selection__logo {
@@ -566,6 +612,10 @@ body {
 
 .language-selection__label, .language-selection__marker {
   color: #bfbfbf;
+}
+
+.copy {
+  color: #595959;
 }
 
 /* ===== MEDIA QUERIES ===== */

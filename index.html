@@ -242,14 +242,16 @@
     <footer class="footer">
         <div class="wrapper footer__wrapper">
             <div class="footer__upper-block">
-                <div class="footer__weather">
-                    <a href="/">London, United Kingdom</a>
-                    <a href="/"><img src="img/clouds.png" alt="clouds"></a>
-                    <a href="/">16°</a>
+                <div class="weather footer__weather">
+                    <a href="/" class="weather__item">London, United Kingdom</a>
+                    <a href="/" class="weather__item"><img src="img/clouds.png" alt="clouds"></a>
+                    <a href="/" class="weather__item">16°</a>
                 </div>
                 <div class="footer__search">
-                    <div class="footer__searchbar"></div>
-                    <div class="footer__searchglass"></div>
+                    <form action="/" method="" class="footer__search-form">
+                        <input type="search" class="footer__searchbar" placeholder="Search CNN...">
+                        <button type="submit" class="footer__search-submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
             </div>
             <!-- The exact same menu as in the burger block -->

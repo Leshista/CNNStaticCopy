@@ -4,7 +4,53 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    padding: 3rem 0;
+    &__upper-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__weather {
+    }
+
+    &__search {
+    }
+
+    &__search-form {
+        box-sizing: border-box;
+        background-color: #262626;
+        padding: 0.3rem 1rem;
+    }
+
+    &__searchbar {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $grey;
+        font-size: 1.6rem;
+        width: 26rem;
+    }
+
+    &__search-submit {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: $grey;
+        font-size: 2rem;
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
 }
+
+.weather {
+    &__item {
+        color: #fff;
+        text-decoration: none;
+        padding-right: 1.5rem;
+    }
+}
+
 .language-selection__block_in-the-footer {
 }
 .language-selection {
@@ -14,5 +60,10 @@
     &__label,
     &__marker {
         color: $grey;
+    }
+}
+.copy {
+    color: #595959;
+    &__text {
     }
 }
