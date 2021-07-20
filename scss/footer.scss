@@ -92,3 +92,8 @@
         }
     }
 }
+.nav__item_in-the-footer {
+    &:hover {
+        color: inherit;
+    }
+}
