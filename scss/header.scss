@@ -8,6 +8,9 @@
     height: 5rem;
     width: 100%;
     background-color: #0c0c0c;
+    // Making header be on top of everything in case of scrolling
+    position: relative;
+    z-index: 5;
 
     &__wrapper {
         height: 100%;
@@ -84,6 +87,7 @@
     }
 
     &__marker {
+        margin-left: 0.4rem;
     }
     &__block {
         width: 25rem;
@@ -115,7 +119,7 @@
         color: transparent;
         border: none;
         border-top: 1px solid $grey;
-        width: 90%;
+        width: 100%;
         margin-bottom: 1.5rem;
     }
     &__set-preference {
@@ -128,7 +132,7 @@
     &__preference-block {
         display: inherit;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     &__preference-radiobutton {
     }

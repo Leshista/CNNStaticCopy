@@ -1,10 +1,11 @@
 /* ===== FOOTER ===== */
 .footer {
     background-color: #0c0c0c;
+    color: $grey;
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 3rem 0;
+    padding: 3rem 0 7rem 0;
     &__upper-block {
         display: flex;
         justify-content: space-between;
@@ -42,7 +43,17 @@
         cursor: pointer;
     }
 }
-
+.menu {
+    margin: 0 0 4rem 0;
+    padding-top: 2.5rem;
+}
+.footer .menu__item {
+    line-height: 2.6rem;
+    padding-top: 0.5rem;
+}
+.footer .menu__block {
+    padding-bottom: 2rem;
+}
 .weather {
     &__item {
         color: #fff;
@@ -52,18 +63,32 @@
 }
 
 .language-selection__block_in-the-footer {
+    top: -27.5rem;
+    left: -0.1rem;
+    align-items: flex-start;
 }
 .language-selection {
     &__logo {
         width: 3.5rem;
-    }
-    &__label,
-    &__marker {
-        color: $grey;
+        padding-right: 1rem;
     }
 }
+.footer .language-selection__set-preference {
+    line-height: 3.5rem;
+    margin-bottom: 0;
+}
+.footer .language-selection__confirm {
+    margin-bottom: 1.5rem;
+}
 .copy {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: right;
     color: #595959;
     &__text {
+        line-height: 2rem;
+        &:last-of-type {
+            margin-bottom: 0.5rem;
+        }
     }
 }

@@ -177,6 +177,8 @@ body {
   height: 5rem;
   width: 100%;
   background-color: #0c0c0c;
+  position: relative;
+  z-index: 5;
   /* Making logo to 'stand out' from header */
 }
 
@@ -278,6 +280,10 @@ body {
   cursor: pointer;
 }
 
+.language-selection__marker {
+  margin-left: 0.4rem;
+}
+
 .language-selection__block {
   width: 25rem;
   -webkit-box-sizing: border-box;
@@ -325,7 +331,7 @@ body {
   color: transparent;
   border: none;
   border-top: 1px solid #bfbfbf;
-  width: 90%;
+  width: 100%;
   margin-bottom: 1.5rem;
 }
 
@@ -341,8 +347,9 @@ body {
 .language-selection__preference-block {
   display: inherit;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .language-selection__confirm {
@@ -555,10 +562,11 @@ body {
 /* ===== FOOTER ===== */
 .footer {
   background-color: #0c0c0c;
+  color: #bfbfbf;
   width: 100%;
   position: fixed;
   bottom: 0;
-  padding: 3rem 0;
+  padding: 3rem 0 7rem 0;
 }
 
 .footer__upper-block {
@@ -600,22 +608,61 @@ body {
   cursor: pointer;
 }
 
+.menu {
+  margin: 0 0 4rem 0;
+  padding-top: 2.5rem;
+}
+
+.footer .menu__item {
+  line-height: 2.6rem;
+  padding-top: 0.5rem;
+}
+
+.footer .menu__block {
+  padding-bottom: 2rem;
+}
+
 .weather__item {
   color: #fff;
   text-decoration: none;
   padding-right: 1.5rem;
 }
 
-.language-selection__logo {
-  width: 3.5rem;
+.language-selection__block_in-the-footer {
+  top: -27.5rem;
+  left: -0.1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.language-selection__label, .language-selection__marker {
-  color: #bfbfbf;
+.language-selection__logo {
+  width: 3.5rem;
+  padding-right: 1rem;
+}
+
+.footer .language-selection__set-preference {
+  line-height: 3.5rem;
+  margin-bottom: 0;
+}
+
+.footer .language-selection__confirm {
+  margin-bottom: 1.5rem;
 }
 
 .copy {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
   color: #595959;
+}
+
+.copy__text {
+  line-height: 2rem;
+}
+
+.copy__text:last-of-type {
+  margin-bottom: 0.5rem;
 }
 
 /* ===== MEDIA QUERIES ===== */
