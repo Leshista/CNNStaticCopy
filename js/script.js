@@ -32,7 +32,14 @@ burgerSwitcher.addEventListener('click', function () {
     navItems.forEach(function (e, i, a) {
         if (!e.classList.contains('nav__item_in-the-footer')) {
             e.classList.toggle('burger__block_open');
-        }
+        };
+        // Closing language selection when burger menu is opened
+        if (!languageSelectionBlock.classList.contains('hidden')) {
+            languageSelectionBlock.classList.toggle('hidden');
+        };
+        if (!languageSelectionBlockFooter.classList.contains('hidden')) {
+            languageSelectionBlockFooter.classList.toggle('hidden');
+        };
     });
     languageSelectionLabel.classList.toggle('burger__block_open');
 });
