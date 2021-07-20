@@ -1,0 +1,15 @@
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0c0c0c;
+}
+.language-selection__block_in-the-footer {
+}
+.language-selection {
+    &__logo {
+        width: 3.5rem;
+    }
+    &__label,
+    &__marker {
+        color: $grey;
+    }
+}

@@ -82,9 +82,11 @@
                     <!-- And for the burger menu -->
                     <input type="checkbox" class="burger__switcher" id="burger__switcher" hidden>
                     <label for="burger__switcher" class="burger__label"><i class="fas fa-bars"></i></label>
+                    <!-- === Menu that pops up when you click on the burger switcher === -->
                     <div class="burger__block hidden">
                         <div class="wrapper">
                             <nav class="menu">
+                                <!-- Twelve blocks to rule them all -->
                                 <ul class="menu__block">
                                     <li><a href="/" class="menu__title">Regions</a></li>
                                     <li><a href="/" class="menu__item">U.S.</a></li>
@@ -198,6 +200,7 @@
                                     <li><a href="/" class="menu__item">iReport</a></li>
                                 </ul>
                             </nav>
+                            <!-- In theory, there must be the exact same elements as in language-selection block, but it has to be modified so hard that I decided to remade it almost all together with addition of "-second" to the class name. Not the best practice maybe, but it works -->
                             <nav class="language-selection-second">
                                 <div class="language-selection-second__item">
                                     <a href="/" class="language-selection-second__link"><img src="img/logo.png"
@@ -235,6 +238,184 @@
             </div>
         </div>
     </header>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__upper-block">
+                <div class="footer__weather">
+                    <a href="/">London, United Kingdom</a>
+                    <a href="/"><img src="img/clouds.png" alt="clouds"></a>
+                    <a href="/">16°</a>
+                </div>
+                <div class="footer__search">
+                    <div class="footer__searchbar"></div>
+                    <div class="footer__searchglass"></div>
+                </div>
+            </div>
+            <!-- The exact same menu as in the burger block -->
+            <nav class="menu">
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Regions</a></li>
+                    <li><a href="/" class="menu__item">U.S.</a></li>
+                    <li><a href="/" class="menu__item">Africa</a></li>
+                    <li><a href="/" class="menu__item">Americas</a></li>
+                    <li><a href="/" class="menu__item">Asia</a></li>
+                    <li><a href="/" class="menu__item">China</a></li>
+                    <li><a href="/" class="menu__item">Europe</a></li>
+                    <li><a href="/" class="menu__item">Middle East</a></li>
+                    <li><a href="/" class="menu__item">Opinion</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">U.S. Politics</a></li>
+                    <li><a href="/" class="menu__item">45</a></li>
+                    <li><a href="/" class="menu__item">Congress</a></li>
+                    <li><a href="/" class="menu__item">Security</a></li>
+                    <li><a href="/" class="menu__item">The Nine</a></li>
+                    <li><a href="/" class="menu__item">Trumpremica</a></li>
+                    <li><a href="/" class="menu__item">State</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title menu__title_img"><img src="img/money.png" alt="money"
+                                style="width: 7.86rem; padding-top: 0.5rem;"></a></li>
+                    <li><a href="/" class="menu__item">Business</a></li>
+                    <li><a href="/" class="menu__item">Markets</a></li>
+                    <li><a href="/" class="menu__item">Tech</a></li>
+                    <li><a href="/" class="menu__item">Luxury</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title menu__title_img"><img src="img/entertainment.png"
+                                alt="entertainment" style="width: 13.25rem;"></a></li>
+                    <li><a href="/" class="menu__item">Stars</a></li>
+                    <li><a href="/" class="menu__item">Screen</a></li>
+                    <li><a href="/" class="menu__item">Binge</a></li>
+                    <li><a href="/" class="menu__item">Culture</a></li>
+                    <li><a href="/" class="menu__item">Media</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title menu__title_img"><img src="img/tech.png" alt="tech"
+                                style="width: 4.325rem;"></a></li>
+                    <li><a href="/" class="menu__item">Business</a></li>
+                    <li><a href="/" class="menu__item">Culture</a></li>
+                    <li><a href="/" class="menu__item">Gadgets</a></li>
+                    <li><a href="/" class="menu__item">Future</a></li>
+                    <li><a href="/" class="menu__item">Startups</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Sport</a></li>
+                    <li><a href="/" class="menu__item">Football</a></li>
+                    <li><a href="/" class="menu__item">Golf</a></li>
+                    <li><a href="/" class="menu__item">Tennis</a></li>
+                    <li><a href="/" class="menu__item">Motorsport</a></li>
+                    <li><a href="/" class="menu__item">Horseracing</a></li>
+                    <li><a href="/" class="menu__item">Equestrian</a></li>
+                    <li><a href="/" class="menu__item">Sailing</a></li>
+                    <li><a href="/" class="menu__item">Skiing</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Travel</a></li>
+                    <li><a href="/" class="menu__item">Aviation</a></li>
+                    <li><a href="/" class="menu__item">Business Traveller</a></li>
+                    <li><a href="/" class="menu__item">Destinations</a></li>
+                    <li><a href="/" class="menu__item">Features</a></li>
+                    <li><a href="/" class="menu__item">Food/Drink</a></li>
+                    <li><a href="/" class="menu__item">Hotels</a></li>
+                    <li><a href="/" class="menu__item">Partner Hotels</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title menu__title_img"><img src="img/style.png" alt="style"
+                                style="width: 6.6rem;"></a></li>
+                    <li><a href="/" class="menu__item">Fashion</a></li>
+                    <li><a href="/" class="menu__item">Design</a></li>
+                    <li><a href="/" class="menu__item">Architecture</a></li>
+                    <li><a href="/" class="menu__item">Arts</a></li>
+                    <li><a href="/" class="menu__item">Autos</a></li>
+                    <li><a href="/" class="menu__item">Luxury</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Health</a></li>
+                    <li><a href="/" class="menu__item">Diet + Fitness</a></li>
+                    <li><a href="/" class="menu__item">Living Well</a></li>
+                    <li><a href="/" class="menu__item">Parenting + Family</a></li>
+                    <li><a href="/" class="menu__item">Vital Signs</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Features</a></li>
+                    <li><a href="/" class="menu__item">Freedom Project</a></li>
+                    <li><a href="/" class="menu__item">Impact Your World</a></li>
+                    <li><a href="/" class="menu__item">Inside Africa</a></li>
+                    <li><a href="/" class="menu__item">2 Degrees</a></li>
+                    <li><a href="/" class="menu__item">All Features</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">Video</a></li>
+                    <li><a href="/" class="menu__item">Video News</a></li>
+                    <li><a href="/" class="menu__item">Feature Shows</a></li>
+                    <li><a href="/" class="menu__item">HLN</a></li>
+                    <li><a href="/" class="menu__item">TV Shows</a></li>
+                    <li><a href="/" class="menu__item">TV schedule</a></li>
+                    <li><a href="/" class="menu__item">Faces of CNN Worldwide</a></li>
+                    <li><a href="/" class="menu__item">CNNVR</a></li>
+                </ul>
+                <ul class="menu__block">
+                    <li><a href="/" class="menu__title">More...</a></li>
+                    <li><a href="/" class="menu__item">Weather</a></li>
+                    <li><a href="/" class="menu__item">CNN Heroes</a></li>
+                    <li><a href="/" class="menu__item">CNN Profiles</a></li>
+                    <li><a href="/" class="menu__item">Leadership</a></li>
+                    <li><a href="/" class="menu__item">Pressroom</a></li>
+                    <li><a href="/" class="menu__item">Partner sites</a></li>
+                    <li><a href="/" class="menu__item">iReport</a></li>
+                </ul>
+            </nav>
+            <div class="language-selection">
+                <a href="/"><img src="img/logo.png" alt="logo" class="language-selection__logo"></a>
+                <input type="checkbox" class="language-selection__switcher language-selection__switcher_in-the-footer"
+                    id="language-selection__switcher_in-the-footer" hidden>
+                <label for="language-selection__switcher_in-the-footer" class="language-selection__label">International
+                    Edition</label>
+                <div class="language-selection__marker">+</div>
+                <div class="language-selection__block language-selection__block_in-the-footer hidden">
+                    <a href="/" class="language-selection__language">U.S.</a><a href="/"
+                        class="language-selection__language">Arabic</a><a href="/"
+                        class="language-selection__language">Español</a>
+                    <hr class="language-selection__line">
+                    <p class="language-selection__set-preference">Set edition preference:</p>
+                    <div class="language-selection__preference-block">
+                        <div class="language-selection__preference">
+                            <input type="radio" value="U.S" name="preference" id="U.S"
+                                class="language-selection__preference-radiobutton">
+                            <label for="U.S" class="language-selection__preference-label">U.S.</label>
+                        </div>
+                        <div class="language-selection__preference">
+                            <input type="radio" value="International" name="preference" id="International"
+                                class="language-selection__preference-radiobutton" checked>
+                            <label for=" International"
+                                class="language-selection__preference-label">International</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="language-selection__confirm">Confirm</button>
+                </div>
+            </div>
+            <div class="footer__copy copy">
+                <p class="copy__text">© 2017 Cable News Network. Turner Broadcasting System, Inc. All Rights Reserved.
+                </p>
+                <p class="copy__text">CNN Sans ™ & © 2016 Cable News Network.</p>
+                <nav class=" nav footer__nav">
+                    <a href="/" class="nav__item nav__item_in-the-footer">Terms of Use</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Privacy Policy</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">AdChoices</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Advertise with us</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">About us</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Newsletters</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Work for us</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Help</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">Transcripts</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">License Footage</a>
+                    <a href="/" class="nav__item nav__item_in-the-footer">CNN Newsourse</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

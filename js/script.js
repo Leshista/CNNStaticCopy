@@ -1,7 +1,9 @@
 let header = document.querySelector('.header')
 let navItems = document.querySelectorAll('.nav__item');
 let languageSelectionSwitcher = document.querySelector('.language-selection__switcher');
+let languageSelectionSwitcherFooter = document.querySelector('.language-selection__switcher_in-the-footer');
 let languageSelectionLabel = document.querySelector('.language-selection__label');
+let languageSelectionBlockFooter = document.querySelector('.language-selection__block_in-the-footer');
 let languageSelectionBlock = document.querySelector('.language-selection__block');
 let searchBar = document.querySelector('.search__searchbar');
 let searchSubmit = document.querySelector('.search__submit');
@@ -14,6 +16,10 @@ languageSelectionSwitcher.addEventListener('click', function () {
     languageSelectionBlock.classList.toggle('hidden');
 });
 
+languageSelectionSwitcherFooter.addEventListener('click', function () {
+    languageSelectionBlockFooter.classList.toggle('hidden');
+});
+
 // Hitting 'Enter' in submit equals clicking the submit button for some reason
 searchSubmit.addEventListener('click', function () {
     alert(searchBar.value);
@@ -22,8 +28,11 @@ searchSubmit.addEventListener('click', function () {
 burgerSwitcher.addEventListener('click', function () {
     burgerBlock.classList.toggle('hidden');
     header.classList.toggle('burger__block_open-header');
+    // We need to change color and deactivate the nav links in the header only, leaving the footer ones without changes
     navItems.forEach(function (e, i, a) {
-        e.classList.toggle('burger__block_open');
+        if (!e.classList.contains('nav__item_in-the-footer')) {
+            e.classList.toggle('burger__block_open');
+        }
     });
     languageSelectionLabel.classList.toggle('burger__block_open');
 });

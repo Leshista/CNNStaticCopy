@@ -552,6 +552,19 @@ body {
   margin: 0 0 0 0.5rem;
 }
 
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0c0c0c;
+}
+
+.language-selection__logo {
+  width: 3.5rem;
+}
+
+.language-selection__label, .language-selection__marker {
+  color: #bfbfbf;
+}
+
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 110em) {
   .wrapper {
