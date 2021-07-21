@@ -1,4 +1,9 @@
 /* ===== BASIC CSS ===== */
+/* The essential */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* The most often text color in this page */
 $grey: #bfbfbf;
 /* The most often hover effect */
