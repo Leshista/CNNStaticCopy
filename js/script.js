@@ -1,4 +1,4 @@
-let header = document.querySelector('.header')
+let header = document.querySelector('.header');
 let navItems = document.querySelectorAll('.nav__item');
 let languageSelectionSwitcher = document.querySelector('.language-selection__switcher');
 let languageSelectionSwitcherFooter = document.querySelector('.language-selection__switcher_in-the-footer');
