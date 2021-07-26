@@ -13,9 +13,27 @@ $grey: #bfbfbf;
         cursor: pointer;
     }
 }
+@mixin active-main {
+    &:hover {
+        color: rgb(204, 0, 0);
+    }
+}
 @mixin trans-color {
     transition-property: color;
     transition-duration: 200ms;
+}
+@mixin on-red {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(204, 0, 0);
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
 }
 /* Disabling blue background during selection */
 *::selection {
