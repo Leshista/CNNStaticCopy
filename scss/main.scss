@@ -7,20 +7,6 @@
     &__first-article {
     }
 
-    &__subtitle {
-        &_bold {
-        }
-
-        &_big {
-        }
-
-        &_on-grey {
-        }
-    }
-
-    &__line {
-    }
-
     &__second-article {
     }
 
@@ -49,8 +35,6 @@
         @include active-main;
     }
     &__subtitle {
-        @include trans-color;
-        @include active-main;
         &_on-red {
             @include on-red;
             &:hover {
@@ -66,6 +50,7 @@
 .far {
 }
 .fa-play-circle {
+    color: #a6a6a6;
 }
 .playbutton {
 }
@@ -73,10 +58,14 @@
 }
 .second-article {
     &__img {
+        position: relative;
+        padding-bottom: 8rem;
+        margin-bottom: 3rem;
     }
 
     &__title {
         &_on-grey {
+            position: absolute;
         }
     }
 }
@@ -86,16 +75,33 @@
         }
     }
     &__subtitle {
+        padding: 0.7rem 0;
+        line-height: 2rem;
+        @include trans-color;
+        @include active-main;
         &_on-red {
             @include on-red;
             &:hover {
                 color: #fff;
             }
         }
+        &_bold {
+            font-weight: 700;
+        }
+
+        &_big {
+        }
+
+        &_on-grey {
+        }
     }
 
     &__logo-block {
         position: relative;
+    }
+    &__line {
+        margin: 0;
+        border-top: 0.05rem solid #a6a6a6;
     }
 }
 .fas {
