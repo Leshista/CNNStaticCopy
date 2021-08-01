@@ -135,6 +135,13 @@
         margin: 0;
         border-top: 0.05rem solid #a6a6a6;
     }
+    &__subtitle-img {
+        width: 18.4rem;
+        &_square {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+    }
 }
 .fas {
 }

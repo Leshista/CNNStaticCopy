@@ -78,7 +78,15 @@
             width: 94vw;
         }
     }
-    .common-article__img {
-        width: 94vw;
+    .common-article {
+        &__img {
+            width: 94vw;
+        }
+        &__subtitle-img {
+            &_square {
+                width: 11.575rem;
+                height: 11.575rem;
+            }
+        }
     }
 }
