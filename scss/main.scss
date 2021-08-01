@@ -57,8 +57,10 @@
 .col {
 }
 .second-article {
+    text-align: center;
     &__img {
         position: relative;
+        text-align: center;
         padding-bottom: 8rem;
         margin-bottom: 3rem;
     }
@@ -66,12 +68,22 @@
     &__title {
         &_on-grey {
             position: absolute;
+            font-size: 2.1rem;
+            background-color: #e6e6e6;
+            margin: -2.3rem 3rem 0 3rem;
+            padding: 1rem 1rem 1.5rem 1rem;
+            line-height: 2.6rem;
         }
     }
 }
 .common-article {
     &__title {
         &_on-grey {
+            background-color: #f2f2f2;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 2.2rem;
+            padding: 0.7rem;
         }
     }
     &__subtitle {
@@ -90,6 +102,8 @@
         }
 
         &_big {
+            font-size: 2rem;
+            line-height: 2.4rem;
         }
 
         &_on-grey {

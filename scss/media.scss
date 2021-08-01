@@ -61,15 +61,24 @@
         background-color: #1a1a1a;
         padding: 1rem;
     }
-}
-.copy {
-    text-align: left;
-    &__text {
-        &:first-of-type {
-            margin-top: 2rem;
+    .copy {
+        text-align: left;
+        &__text {
+            &:first-of-type {
+                margin-top: 2rem;
+            }
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
         }
-        &:last-of-type {
-            margin-bottom: 2rem;
+    }
+    .second-article__img,
+    .first-article__logo-block {
+        img {
+            width: 94vw;
         }
+    }
+    .common-article__img {
+        width: 94vw;
     }
 }
