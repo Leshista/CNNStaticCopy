@@ -22,6 +22,10 @@ $grey: #bfbfbf;
     transition-property: color;
     transition-duration: 200ms;
 }
+@mixin trans-bg-color {
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
 @mixin on-red {
     height: 4rem;
     display: flex;
