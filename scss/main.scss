@@ -15,6 +15,7 @@
 
     &__span {
         &_bold {
+            font-weight: 700;
         }
     }
 }
@@ -76,12 +77,18 @@
 .common-article {
     &__title {
         &_on-grey {
+            display: flex;
+            justify-content: space-between;
             background-color: #f2f2f2;
             color: #404040;
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 2.2rem;
             padding: 0.7rem;
+            .fa-chevron-right {
+                font-size: 2.3rem;
+                padding: 0.2rem 1.4rem 0 1.4rem;
+            }
         }
     }
     &__subtitle {
@@ -112,6 +119,9 @@
             line-height: 3.4rem;
             background-color: #d6d6d6;
             width: 100%;
+        }
+        &_on-grey-semitransparent {
+            background: hsla(0, 0%, 98%, 0.85);
         }
     }
 
@@ -144,8 +154,6 @@
     }
 }
 .fas {
-}
-.fa-chevron-right {
 }
 .title-before-section {
 }
