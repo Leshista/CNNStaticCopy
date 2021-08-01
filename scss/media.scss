@@ -75,12 +75,13 @@
     .second-article__img,
     .first-article__logo-block {
         img {
-            width: 94vw;
+            width: 100vw;
         }
     }
     .common-article {
+        padding-top: 1.5rem;
         &__img {
-            width: 94vw;
+            width: 100vw;
         }
         &__subtitle-img {
             &_square {
@@ -88,5 +89,24 @@
                 height: 11.575rem;
             }
         }
+    }
+    .second-article {
+        padding-top: 1.5rem;
+        &__img {
+            margin-bottom: 0;
+            &:last-of-type {
+                padding-bottom: 3.5rem;
+            }
+        }
+    }
+    .news {
+        padding: 0;
+    }
+    .featured-sections__title {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+    .double-lines {
+        width: 58%;
     }
 }

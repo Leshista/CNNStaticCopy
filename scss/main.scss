@@ -169,10 +169,25 @@
         }
     }
 }
-.fas {
-}
-.title-before-section {
+.featured-sections {
     padding: 1.5rem 0;
+    display: flex;
+    align-items: flex-end;
+
+    &__title {
+        font-size: 2.4rem;
+        width: 27.5%;
+    }
+}
+.double-lines {
+    width: 123.5%;
+    &__line {
+        border-top: 4px solid #d9d9d9;
+        margin: 0.1rem 0;
+    }
+}
+
+.fas {
 }
 .col-4 {
 }
