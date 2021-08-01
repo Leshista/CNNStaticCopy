@@ -3,6 +3,9 @@
     &__wrapper {
     }
 }
+.container-fluid {
+    box-sizing: border-box;
+}
 .news {
     padding: 1.5rem 0;
     &__first-article {
