@@ -13,9 +13,6 @@
     &__common-article {
     }
 
-    &__subtitle-block {
-    }
-
     &__span {
         &_bold {
         }
@@ -125,6 +122,15 @@
     &__logo-block {
         position: relative;
     }
+
+    &__subtitle-block {
+        display: flex;
+        padding-bottom: 0.5rem;
+        img {
+            margin-right: 1rem;
+        }
+    }
+
     &__line {
         margin: 0;
         border-top: 0.05rem solid #a6a6a6;
