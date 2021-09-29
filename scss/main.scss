@@ -143,8 +143,24 @@
             background-color: #d6d6d6;
             width: 100%;
         }
+        &_on-black {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            bottom: 0.2rem;
+            font-size: 1.4rem;
+            color: #fff;
+            background-color: #000;
+            width: 22%;
+            &:hover {
+                color: #fff;
+            }
+        }
         &_on-grey-semitransparent {
             background: hsla(0, 0%, 98%, 0.85);
+        }
+        &_on-black-semitransparent {
+            background: hsla(0, 0, 0, 0.15);
         }
     }
 
@@ -204,4 +220,11 @@
 .fas {
 }
 .col-4 {
+}
+.video-button {
+    font-size: 2rem;
+    @include trans-color;
+}
+.video-button_red {
+    color: rgb(204, 0, 0);
 }

@@ -9,7 +9,8 @@ let searchBar = document.querySelector('.search__searchbar');
 let searchSubmit = document.querySelector('.search__submit');
 let burgerSwitcher = document.querySelector('.burger__switcher');
 let burgerBlock = document.querySelector('.burger__block');
-
+let videoBlock = document.querySelector('.video-block');
+let videoButton = document.querySelector('.video-button');
 
 // Making clicking on switcher reveal block, the first way
 languageSelectionSwitcher.addEventListener('click', function () {
@@ -42,4 +43,11 @@ burgerSwitcher.addEventListener('click', function () {
         };
     });
     languageSelectionLabel.classList.toggle('burger__block_open');
+});
+// Hover a video makes button red
+videoBlock.addEventListener('mouseover', function () {
+    videoButton.classList.toggle('video-button_red');
+});
+videoBlock.addEventListener('mouseout', function () {
+    videoButton.classList.toggle('video-button_red');
 });
