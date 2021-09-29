@@ -11,6 +11,13 @@ let burgerSwitcher = document.querySelector('.burger__switcher');
 let burgerBlock = document.querySelector('.burger__block');
 let videoBlock = document.querySelector('.video-block');
 let videoButton = document.querySelector('.video-button');
+let activeImage = document.querySelector('.common-article__img_active');
+let activeSubtitle = document.querySelector('.common-article__subtitle_active');
+
+let videoBlocks = document.querySelectorAll('.video-block');
+let videoButtons = document.querySelectorAll('.video-button');
+let activeImages = document.querySelectorAll('.common-article__img_active');
+let activeSubtitles = document.querySelectorAll('.common-article__subtitle_active');
 
 // Making clicking on switcher reveal block, the first way
 languageSelectionSwitcher.addEventListener('click', function () {
@@ -46,8 +53,15 @@ burgerSwitcher.addEventListener('click', function () {
 });
 // Hover a video makes button red
 videoBlock.addEventListener('mouseover', function () {
-    videoButton.classList.toggle('video-button_red');
+    videoButton.classList.toggle('red');
 });
 videoBlock.addEventListener('mouseout', function () {
-    videoButton.classList.toggle('video-button_red');
+    videoButton.classList.toggle('red');
+});
+// Adding the same to some articles
+activeImage.addEventListener('mouseover', function () {
+    activeSubtitle.classList.toggle('red');
+});
+activeImage.addEventListener('mouseout', function () {
+    activeSubtitle.classList.toggle('red');
 });
