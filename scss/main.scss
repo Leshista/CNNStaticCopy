@@ -176,7 +176,7 @@
         }
     }
 }
-.featured-sections {
+.section-titleblock {
     padding: 1.5rem 0;
     display: flex;
     align-items: flex-end;
@@ -188,7 +188,13 @@
     }
 }
 .double-lines {
-    width: 100%;
+    width: 110%;
+    &_bigger {
+        width: 250%;
+    }
+    &_lesser {
+        width: 90%;
+    }
     &__line {
         border-top: 4px solid #d9d9d9;
         margin: 0.2rem 0;

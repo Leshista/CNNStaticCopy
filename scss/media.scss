@@ -106,11 +106,17 @@
     .news {
         padding: 0;
     }
-    .featured-sections__title {
+    .section-titleblock__title {
         font-size: 1.5rem;
         width: 40%;
     }
     .double-lines {
         width: 58%;
+        &_bigger {
+            width: 160%;
+        }
+        &_lesser {
+            width: 70%;
+        }
     }
 }
