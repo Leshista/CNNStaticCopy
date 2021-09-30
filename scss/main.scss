@@ -115,6 +115,9 @@
         line-height: 2rem;
         @include trans-color;
         @include active-main;
+        &_photo {
+            width: 11% !important;
+        }
         &_on-red {
             @include on-red;
             bottom: 8.2rem;
@@ -152,6 +155,7 @@
             color: #fff;
             background-color: #000;
             width: 22%;
+            border-radius: 0 5px 0 0;
             &:hover {
                 color: #fff;
             }
@@ -217,12 +221,8 @@
     }
 }
 
-.fas {
-}
-.col-4 {
-}
 .video-button {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #fff;
     @include trans-color;
 }
