@@ -52,16 +52,20 @@ burgerSwitcher.addEventListener('click', function () {
     languageSelectionLabel.classList.toggle('burger__block_open');
 });
 // Hover a video makes button red
-videoBlock.addEventListener('mouseover', function () {
-    videoButton.classList.toggle('red');
-});
-videoBlock.addEventListener('mouseout', function () {
-    videoButton.classList.toggle('red');
+videoBlocks.forEach(function (e, i, a) {
+    videoBlocks[i].addEventListener('mouseover', function () {
+        videoButtons[i].classList.toggle('red');
+    });
+    videoBlocks[i].addEventListener('mouseout', function () {
+        videoButtons[i].classList.toggle('red');
+    });
 });
 // Adding the same to some articles
-activeImage.addEventListener('mouseover', function () {
-    activeSubtitle.classList.toggle('red');
-});
-activeImage.addEventListener('mouseout', function () {
-    activeSubtitle.classList.toggle('red');
+activeImages.forEach(function (e, i, a) {
+    activeImages[i].addEventListener('mouseover', function () {
+        activeSubtitles[i].classList.toggle('red');
+    });
+    activeImages[i].addEventListener('mouseout', function () {
+        activeSubtitles[i].classList.toggle('red');
+    });
 });
