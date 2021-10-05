@@ -126,6 +126,12 @@
                 color: #fff;
             }
         }
+        &_on-white {
+            @include on-red;
+            bottom: 4.7rem;
+            color: #c00;
+            background-color: #fff;
+        }
         &_bold {
             font-weight: 700;
         }
@@ -146,6 +152,12 @@
             line-height: 3.4rem;
             background-color: #d6d6d6;
             width: 100%;
+            &_semi-transparent {
+                background: rgba(38, 38, 38, 0.85);
+                font-size: 2.8rem;
+                text-align: center;
+                color: #fff;
+            }
         }
         &_on-black {
             position: absolute;
