@@ -83,6 +83,15 @@
         &__img {
             width: 96vw;
         }
+        &__subtitle_white {
+            width: 100%;
+            padding-left: 1rem;
+        }
+        &__subtitle_on-grey_semi-transparent {
+            text-align: left;
+            padding-left: 1rem;
+            box-sizing: border-box;
+        }
         &__subtitle_on-red {
             top: 0;
             left: 0;
